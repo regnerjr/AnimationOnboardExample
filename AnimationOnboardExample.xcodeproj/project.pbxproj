@@ -10,6 +10,8 @@
 		03F629B50BE63C2510ED28C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39AB86670466D72153061348 /* Foundation.framework */; };
 		26909623A008389FBE85609C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B55A99FFAF0C4385ED8B852A /* Images.xcassets */; };
 		438DEB08FE874AFE863377D2 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 831A181127A1401F6E43B4F3 /* Main.storyboard */; };
+		52A4330B1A82836800376AA3 /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4330A1A82836800376AA3 /* OnboardViewController.swift */; };
+		52A4330D1A8295DF00376AA3 /* Auto Layout Helper Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4330C1A8295DF00376AA3 /* Auto Layout Helper Functions.swift */; };
 		ACB18783BEF750D8BC2AE4F6 /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06BDFC78626BBBCAD1758D2 /* libPods-unit_tests.a */; };
 		AD56E5E43ED107B476E325E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D2C785B19323B685D77F6 /* AppDelegate.swift */; };
 		DE3F5F29578DE70E7BFCB573 /* LaunchScreen.xib in Sources */ = {isa = PBXBuildFile; fileRef = BF59452DBADC7171BCD63A0E /* LaunchScreen.xib */; };
@@ -29,6 +31,8 @@
 		2CCBD7C4EF7C631308D5D340 /* Pods-unit_tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.release.xcconfig"; sourceTree = "<group>"; };
 		39AB86670466D72153061348 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		49B30FFAE8F3F383516DB16F /* Pods-unit_tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.debug.xcconfig"; sourceTree = "<group>"; };
+		52A4330A1A82836800376AA3 /* OnboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
+		52A4330C1A8295DF00376AA3 /* Auto Layout Helper Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Auto Layout Helper Functions.swift"; sourceTree = "<group>"; };
 		598BDCAFDBFF1641F4961F05 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F8709D4872D78E0D6E1D72 /* AnimationOnboardExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationOnboardExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		831A181127A1401F6E43B4F3 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +67,7 @@
 		021CF708CAC64C722E9A502D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				52A4330C1A8295DF00376AA3 /* Auto Layout Helper Functions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -71,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				B28D2C785B19323B685D77F6 /* AppDelegate.swift */,
+				52A4330A1A82836800376AA3 /* OnboardViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -374,6 +380,8 @@
 			files = (
 				AD56E5E43ED107B476E325E6 /* AppDelegate.swift in Sources */,
 				438DEB08FE874AFE863377D2 /* Main.storyboard in Sources */,
+				52A4330B1A82836800376AA3 /* OnboardViewController.swift in Sources */,
+				52A4330D1A8295DF00376AA3 /* Auto Layout Helper Functions.swift in Sources */,
 				DE3F5F29578DE70E7BFCB573 /* LaunchScreen.xib in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +443,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -460,6 +469,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
