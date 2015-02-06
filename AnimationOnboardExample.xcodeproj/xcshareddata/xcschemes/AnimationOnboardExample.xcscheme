@@ -20,6 +20,20 @@
                ReferencedContainer = "container:AnimationOnboardExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "52273E801A851CC9006D549C"
+               BuildableName = "WSHelpersTests.xctest"
+               BlueprintName = "WSHelpersTests"
+               ReferencedContainer = "container:AnimationOnboardExample.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -35,6 +49,16 @@
                BlueprintIdentifier = "2E649DDD8F552FE2D6B73F4E"
                BuildableName = "UnitTests.xctest"
                BlueprintName = "UnitTests"
+               ReferencedContainer = "container:AnimationOnboardExample.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "52273E801A851CC9006D549C"
+               BuildableName = "WSHelpersTests.xctest"
+               BlueprintName = "WSHelpersTests"
                ReferencedContainer = "container:AnimationOnboardExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
