@@ -36,22 +36,21 @@ class OnboardViewController: UIViewController {
         view.addSubview(centerTextView)
         view.addSubview(redView)
 
-        let centered = getCenterXandYConstraintsfor(view, centerTextView)
+        let centered = getCenterXandYConstraintsfor(superview: view, subview: centerTextView)
         view.addConstraints(centered)
-        let widthHeight = getWidthHeight(centerTextView, Int(screenBounds.width / 2), Int(screenBounds.width / 2) )
+        let widthHeight = getWidthHeight(view: centerTextView, width: Int(screenBounds.width / 2), height: Int(screenBounds.width / 2) )
         centerTextView.addConstraints(widthHeight)
 
-        let oneThirdFromBottom = getScreenFractionFromBottom(view, redView, 1.0/8.0)
-        let space = standardSizeFromSide(redView, Side.Left)
+        let oneThirdFromBottom = getScreenFractionFromBottom(superview: view, subview: redView, fraction: 1.0/8.0)
+        let space = standardSizeFromSide(redView, side: .Left)
         view.addConstraints(oneThirdFromBottom + space)
         
         let redSquareSize = 60
         redView.layer.cornerRadius = CGFloat(redSquareSize / 2 )
-        let redWidthHeight = getWidthHeight(redView, redSquareSize, redSquareSize)
+        let redWidthHeight = getWidthHeight(view: redView, width: redSquareSize, height: redSquareSize)
         redView.addConstraints(redWidthHeight)
        
         //add animations to the red circle
-//        redView.layer.addAnimation(getFadeAnimation(), forKey: "BigFade")
         redView.layer.addAnimation(getFadeKeyFrameAnimation(), forKey: "BigFade")
         redView.layer.addAnimation(getZoomOffScreenLeftToRight(), forKey: "translateX")
     }
